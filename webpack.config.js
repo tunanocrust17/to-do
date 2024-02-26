@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'To Do',
+      icon: "./src/styles/magnify.svg",
       filename: "index.html",
       template: path.resolve(__dirname, "src", "index.html"),
       inject: true,
@@ -21,6 +22,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/inline',
       },
     ],
   },

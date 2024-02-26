@@ -10,9 +10,26 @@ body{
     background-color: rgb(220, 219, 219);
 }
 
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-buttons {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.material-symbols-outlined {
+    filter: invert(0.5) sepia(1) saturate(10) hue-rotate(180deg);
+}
+
+
 .general-items {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .main-container {
