@@ -14,6 +14,11 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 25px;
+    padding-left: 10px;
+    height: 2rem;
 }
 
 .icon-buttons {
@@ -32,14 +37,24 @@ body{
     align-items: center;
 }
 
+.left-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
 .main-container {
     background-image: url("needle.jpg");
     background-size: cover;
-    background-position: 70% 30%;
+    /* background-position: center center; */
     width: auto;
     height: 100vh;
     display: flex;
-    justify-content: center;
     color: white;
 }
 
