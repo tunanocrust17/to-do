@@ -48,6 +48,21 @@ body{
     margin-left: 20px;
 }
 
+.bottom-sidebar {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.new-list-div {
+    background-color: rgb(187, 187, 187);
+    height: 3rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
 .main-container {
     background-image: url("needle.jpg");
     background-size: cover;
