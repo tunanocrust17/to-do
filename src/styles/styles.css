@@ -42,6 +42,10 @@ body{
     flex-direction: row;
 }
 
+.project {
+    border-radius: 25px;
+}
+
 .project-container {
     display: flex;
     flex-direction: row;
