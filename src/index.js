@@ -1,7 +1,4 @@
-import './styles/styles.css'
-import addProject from './CRUD/createNewProject'
-import { submitProjectBtn } from './submitProjectBtn';
+import init from "./init";
 
-addProject();
-submitProjectBtn();
+init();
 
