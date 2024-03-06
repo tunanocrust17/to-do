@@ -1,6 +1,6 @@
-import createNewProject from "./CRUD/createNewProject";
-import chooseProject from "./UI/readProjectUI";
-import removeProjectContainer from "./UI/removeProjectContainer";
+import createNewProject from "../CRUD/createNewProject";
+import chooseProject from "./readProjectUI";
+import removeProjectContainer from "./removeProjectContainer";
 
 export default function submitProjectBtn() {
     const addProjectBtn = document.querySelector('.add-project-btn')
