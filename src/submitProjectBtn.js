@@ -1,7 +1,6 @@
-import addNewProject from "./CRUD/addNewProject";
+import createNewProject from "./CRUD/createNewProject";
 import chooseProject from "./UI/readProjectUI";
 import removeProjectContainer from "./UI/removeProjectContainer";
-import addProjectUI from "./UI/addProjectUI";
 
 export default function submitProjectBtn() {
     const addProjectBtn = document.querySelector('.add-project-btn')
@@ -11,8 +10,8 @@ export default function submitProjectBtn() {
     addProjectBtn.addEventListener('click', (e)=>{
         e.preventDefault();
         removeProjectContainer();
-        addNewProject();
-        addProjectUI();
+        createNewProject().createProject();
+        createNewProject().addProjectUI();
         projectForm.reset();
         projectDialog.close();
         chooseProject(); //adds functionality for user to click on the project in the sidebar and it will run a function

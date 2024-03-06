@@ -1,5 +1,5 @@
 export default function projectLibrary() {
-    const currentSave = [];
-    console.log(currentSave)
+    let currentSave = [];
+    // console.log(currentSave)
     return currentSave;
 }
