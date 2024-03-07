@@ -1,5 +1,5 @@
 import createNewProject from "../CRUD/createNewProject";
-import chooseProject from "./readProjectUI";
+import readProject from "../CRUD/readProject";
 import removeProjectContainer from "./removeProjectContainer";
 
 export default function submitProjectBtn() {
@@ -14,6 +14,6 @@ export default function submitProjectBtn() {
         createNewProject().addProjectUI();
         projectForm.reset();
         projectDialog.close();
-        chooseProject(); //adds functionality for user to click on the project in the sidebar and it will run a function
+        readProject(); //adds functionality for user to click on the project in the sidebar and it will run a function
     })
 }
