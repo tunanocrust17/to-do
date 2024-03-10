@@ -59,7 +59,7 @@ body{
     justify-content: space-between;
 }
 
-.new-list-div {
+.new-list-div, .new-todo-container {
     background-color: rgb(187, 187, 187);
     height: 3rem;
     border-radius: 5px;
@@ -74,7 +74,16 @@ body{
     width: auto;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
     color: white;
+
+    padding-left: 50px;
+}
+
+.new-todo-container {
+    margin: 15px 15px 5px 15px;
 }
 
 h1{
