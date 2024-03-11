@@ -1,12 +1,18 @@
 import projectLibrary from "../dataModels/projectLibrary";
 import Project from "../dataModels/project";
+import getDataFromLocalStorage from "../Storage/getDataFromLocalStorage";
+import setDataToLocalStorage from "../Storage/setDataToLocalStorage";
 
-let currentLibrary = projectLibrary();
 
 export default function addNewProject() {
 
 
     const createProject = ()=> {
+
+    if(getDataFromLocalStorage('todo') == null ) {
+        localStorage.setItem('todo', '[]');
+    }
+
     let projectTitle = document.getElementById('project-title').value
 
     let newProjectID = Math.floor(Date.now()*Math.random()).toString();
@@ -16,15 +22,20 @@ export default function addNewProject() {
         projectTitle
     )
 
-    currentLibrary.push(newProject);
-    console.log(currentLibrary)
-    return currentLibrary;
+
+    var old_data = getDataFromLocalStorage('todo');
+    old_data.push(newProject)
+
+    setDataToLocalStorage('todo', old_data)
+
 }
 
     const addProjectUI = ()=> {
 
+        var localData = getDataFromLocalStorage('todo');
+        console.log(localData)
         
-        currentLibrary.forEach((item)=>{
+        localData.forEach((item)=>{
 
             const element = document.querySelector('.projects-list');
 
@@ -51,7 +62,7 @@ export default function addNewProject() {
     }
 
     return {
-        currentLibrary,
+
         createProject,
         addProjectUI
     }
