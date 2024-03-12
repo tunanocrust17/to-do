@@ -1,4 +1,5 @@
 import createNewProject from "../CRUD/createNewProject";
+import createNewProjectUI from "./createNewProjectUI";
 import readProject from "../CRUD/readProject";
 import removeProjectContainer from "./removeProjectContainer";
 
@@ -10,8 +11,8 @@ export default function submitProjectBtn() {
     addProjectBtn.addEventListener('click', (e)=>{
         e.preventDefault();
         removeProjectContainer();
-        createNewProject().createProject();
-        createNewProject().addProjectUI();
+        createNewProject();
+        createNewProjectUI();
         projectForm.reset();
         projectDialog.close();
         readProject(); //adds functionality for user to click on the project in the sidebar and it will run a function
