@@ -42,7 +42,7 @@ body{
     flex-direction: row;
 }
 
-.project {
+.project, .todo {
     border-radius: 25px;
 }
 
@@ -59,7 +59,7 @@ body{
     justify-content: space-between;
 }
 
-.new-list-div, .new-todo-container {
+.new-list-div, .new-todo-div {
     background-color: rgb(187, 187, 187);
     height: 3rem;
     border-radius: 5px;
