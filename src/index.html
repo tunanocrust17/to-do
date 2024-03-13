@@ -19,6 +19,40 @@
             <button class="cancel-btn">Cancel</button>
         </form>
     </dialog>
+    <dialog class="todo">
+        <h1 class="new-todo">New Task</h1>
+            <form action="" class="newToDo">
+                <div class="form-row">
+                    <label for="todo-title">Task Title</label>
+                    <input type="text" id="todo-title" name="todo-title">
+                </div>
+                <div class="form-row">
+                    <label for="todo-description">Description</label>
+                    <input type="text" id="todo-description" name="todo-description">
+                </div>
+                <div class="form-row">
+                    <label for="due-Date">Due Date</label>
+                    <input type="date" id="due-date" name="due-date">
+                </div>
+
+                <div class="form-row">
+                    <label for="priorities">Priority</label>
+                    <select id="priorities">
+                      <option value="Low">Low</option>
+                      <option value="Medium">Medium</option>
+                      <option value="High">High</option>
+                      <option value="Urgent">Urgent</option>
+                      </select>
+                </div>
+                <div class="form-row">
+                    <label for="project-list">Project</label>
+                    <select name="project-list" id="project-list"></select>
+                </div>
+
+                <button class="add-todo-btn">Add Task</button>
+                <button class="cancel-btn">Cancel</button>
+            </form>
+    </dialog>
 
 
 
@@ -108,7 +142,7 @@
                 <h2>test</h2>
             </div>
         </div>
-        <div class="new-todo-container">
+        <div class="new-todo-div">
             <div class="left-items">
                 <button class="icon-buttons new-project">
                     <span class="material-symbols-outlined">
