@@ -18,6 +18,7 @@ export default function createNewToDo(){
 
     let newToDo = new Todo (
         newToDoID,
+        selectedProject,
         todoTitle,
         todoDescription,
         dueDate,
