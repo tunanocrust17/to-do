@@ -1,5 +1,6 @@
-export default function Todo(id, title, description, dueDate, priority, notes){
+export default function Todo(id, projectID, title, description, dueDate, priority, notes){
     this.id = id,
+    this.projectID = projectID,
     this.title = title,
     this.description = description,
     this.dueDate = dueDate,
