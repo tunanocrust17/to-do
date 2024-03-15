@@ -26,8 +26,7 @@ export default function createNewToDo(){
 
     let index = old_data.map((item)=>item.id).indexOf(selectedProject);
     let clickedProject = old_data[index].items;
-    let updatedToDo = clickedProject.push(newToDo);
-    // old_data.push(updatedToDo)
+    clickedProject.push(newToDo);
     setDataToLocalStorage('todo', old_data)
 
     console.log(clickedProject);    
