@@ -5,6 +5,7 @@ import submitProjectBtn from './UI/submitProjectBtn';
 import addToDoButton from './UI/newToDoBtn';
 import submitToDoBtn from './UI/submitToDoBtn';
 import readProject from './CRUD/readProject';
+import readAllProjectsUI from './UI/readAllProjectsUI';
 
 export default function init(){
     createNewProjectUI();
@@ -13,4 +14,5 @@ export default function init(){
     submitProjectBtn();
     submitToDoBtn();
     readProject();
+    readAllProjectsUI();
 }
