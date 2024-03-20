@@ -15,9 +15,6 @@ export default function readProject() {
 
             let projectChosen = e.target.getAttribute('listid');
             let index = parsedData.map((item)=>item.id).indexOf(projectChosen);
-            console.log(index);
-            console.log(projectChosen);
-            console.log(parsedData[index]);
             let clickedProject = parsedData[index];
             projectTitle.innerHTML = clickedProject.title;
             projectTitle.setAttribute('listid', projectChosen);
