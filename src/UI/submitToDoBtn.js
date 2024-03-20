@@ -1,5 +1,5 @@
 import createNewToDo from "../CRUD/createNewToDo";
-import readProject from "../CRUD/readProject";
+import readToDoUI from "../UI/readToDoUI";
 
 export default function submitToDoBtn(){
     const addToDoBtn = document.querySelector('.add-todo-btn');
@@ -9,8 +9,8 @@ export default function submitToDoBtn(){
     addToDoBtn.addEventListener('click', (e)=>{
         e.preventDefault();
         createNewToDo();
+        readToDoUI();
         todoForm.reset();
         todoDialog.close();
-        readProject();
     })
 }
