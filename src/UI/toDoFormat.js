@@ -1,15 +1,7 @@
 import deleteToDo from "../CRUD/deleteToDo";
 
 export default function toDoFormat(parsedData, index){
-    //removes an to do items that are currently shown
     let element = document.querySelector('.content-container');
-    let childDiv = document.querySelectorAll('.todo-box');
-    
-    if (childDiv != null){
-    childDiv.forEach((item)=>{
-        item.remove();
-        })
-    }
 
     //building the list of to do's to display to the user
     let itemsArray = parsedData[index].items;

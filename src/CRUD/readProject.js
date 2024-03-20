@@ -1,6 +1,7 @@
 import getDataFromLocalStorage from "../Storage/getDataFromLocalStorage";
 import toDoFormat from "../UI/toDoFormat";
 import deleteProject from "./deleteProject";
+import removeToDoUI from "../UI/removeToDoUI";
 
 export default function readProject() {
     let projectContainer = document.querySelectorAll('.project-container');
@@ -30,7 +31,7 @@ export default function readProject() {
             projectTitle.appendChild(deleteButton);
 
             deleteProject();
-
+            removeToDoUI();
             toDoFormat(parsedData, index);
 
         })

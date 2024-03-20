@@ -1,6 +1,7 @@
 import getDataFromLocalStorage from "../Storage/getDataFromLocalStorage";
 import setDataToLocalStorage from "../Storage/setDataToLocalStorage";
 import toDoFormat from "../UI/toDoFormat";
+import removeToDoUI from "../UI/removeToDoUI";
 
 
 export default function deleteToDo(){
@@ -28,6 +29,7 @@ export default function deleteToDo(){
             clickedProject.splice(clickedToDoIndex,1);
             setDataToLocalStorage('todo', oldData);
 
+            removeToDoUI();
             toDoFormat(oldData, currentProjectIndex)
 
         })
