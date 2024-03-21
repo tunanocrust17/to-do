@@ -1,7 +1,7 @@
 import getDataFromLocalStorage from "../Storage/getDataFromLocalStorage";
-import toDoFormat from "../UI/toDoFormat";
+import toDoFormat from "../UI/toDoUI/toDoFormat";
 import deleteProject from "./deleteProject";
-import removeToDoUI from "../UI/removeToDoUI";
+import removeToDoUI from "../UI/projectUI/removeToDoUI";
 
 export default function readProject() {
     let projectContainer = document.querySelectorAll('.project-container');

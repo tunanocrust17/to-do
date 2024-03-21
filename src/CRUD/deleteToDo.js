@@ -1,7 +1,7 @@
 import getDataFromLocalStorage from "../Storage/getDataFromLocalStorage";
 import setDataToLocalStorage from "../Storage/setDataToLocalStorage";
-import toDoFormat from "../UI/toDoFormat";
-import removeToDoUI from "../UI/removeToDoUI";
+import toDoFormat from "../UI/toDoUI/toDoFormat";
+import removeToDoUI from "../UI/projectUI/removeToDoUI";
 
 
 export default function deleteToDo(){

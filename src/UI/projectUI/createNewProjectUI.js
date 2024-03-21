@@ -1,4 +1,4 @@
-import getDataFromLocalStorage from "../Storage/getDataFromLocalStorage";
+import getDataFromLocalStorage from "../../Storage/getDataFromLocalStorage";
 
 export default function createNewProjectUI() {
 

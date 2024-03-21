@@ -1,4 +1,4 @@
-import deleteToDo from "../CRUD/deleteToDo";
+import deleteToDo from "../../CRUD/deleteToDo";
 
 export default function toDoFormat(parsedData, index){
     let element = document.querySelector('.content-container');

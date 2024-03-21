@@ -1,6 +1,6 @@
-import createNewToDo from "../CRUD/createNewToDo";
-import readToDoUI from "../UI/readToDoUI";
-import removeToDoUI from "./removeToDoUI";
+import createNewToDo from "../../CRUD/createNewToDo";
+import readToDoUI from "./readToDoUI";
+import removeToDoUI from "../projectUI/removeToDoUI";
 
 export default function submitToDoBtn(){
     const addToDoBtn = document.querySelector('.add-todo-btn');

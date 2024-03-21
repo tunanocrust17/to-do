@@ -1,5 +1,5 @@
-import retrieveProjects from "./retrieveProjects";
-import removeProjectsFromList from "./removeProjectChildren";
+import retrieveProjects from "../projectUI/retrieveProjects";
+import removeProjectsFromList from "../projectUI/removeProjectChildren";
 
 export default function addToDoButton() {
     const addToDo = document.querySelector('.new-todo-div');

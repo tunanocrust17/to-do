@@ -1,4 +1,4 @@
-import getDataFromLocalStorage from "../Storage/getDataFromLocalStorage";
+import getDataFromLocalStorage from "../../Storage/getDataFromLocalStorage";
 import toDoFormat from "./toDoFormat";
 
 export default function readToDoUI() {

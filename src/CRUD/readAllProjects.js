@@ -1,5 +1,5 @@
 import getDataFromLocalStorage from "../Storage/getDataFromLocalStorage";
-import toDoFormat from "../UI/toDoFormat";
+import toDoFormat from "../UI/toDoUI/toDoFormat";
 
 export default function readAllProjects(){
     let parsedData = getDataFromLocalStorage('todo');

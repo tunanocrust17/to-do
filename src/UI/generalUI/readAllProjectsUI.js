@@ -1,5 +1,5 @@
-import readAllProjects from "../CRUD/readAllProjects";
-import removeToDoUI from "./removeToDoUI";
+import readAllProjects from "../../CRUD/readAllProjects";
+import removeToDoUI from "../projectUI/removeToDoUI";
 
 export default function(){
     let allProjects = document.querySelector('.all-projects');

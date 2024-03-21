@@ -1,6 +1,6 @@
-import createNewProject from "../CRUD/createNewProject";
+import createNewProject from "../../CRUD/createNewProject";
 import createNewProjectUI from "./createNewProjectUI";
-import readProject from "../CRUD/readProject";
+import readProject from "../../CRUD/readProject";
 import removeProjectContainer from "./removeProjectContainer";
 
 export default function submitProjectBtn() {
