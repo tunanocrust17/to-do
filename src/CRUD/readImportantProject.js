@@ -1,0 +1,38 @@
+import getDataFromLocalStorage from "../Storage/getDataFromLocalStorage";
+import toDoFormat from "../UI/toDoFormat";
+import removeToDoUI from "../UI/removeToDoUI";
+
+export default function readImportantProject(){
+
+    let parsedData = getDataFromLocalStorage('todo');
+
+    let dataLength = parsedData.length;
+
+    let importantPriority = parsedData[1].items[1].priority;
+    let itemsCount = parsedData[1].items.length;
+
+    let importantArray = []
+
+    for( let i = 0; i < dataLength; i++ ) {
+        let itemsCount = parsedData[i].items.length;
+        let currentParsedData = parsedData[i];
+
+        for ( let j = 0; j < itemsCount ; j++){
+            if ( currentParsedData.items[j].priority === "High"){
+                importantArray.push(currentParsedData.items[j])
+            }
+        }
+    }
+
+let importantArrayLength = importantArray.length;
+
+for (let k = 0 ; k < importantArrayLength; k++){
+    removeToDoUI();
+    toDoFormat(importantArray, k)
+} 
+
+
+
+console.log(importantArray)
+
+}
