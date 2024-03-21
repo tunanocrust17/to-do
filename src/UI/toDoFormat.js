@@ -4,7 +4,16 @@ export default function toDoFormat(parsedData, index){
     let element = document.querySelector('.content-container');
 
     //building the list of to do's to display to the user
-    let itemsArray = parsedData[index].items;
+    let itemsArray;
+    
+    //determines if we're grabbing an entire project or data from a new list that we created from individual items from each project
+    if(parsedData[index].items){
+        itemsArray = parsedData[index].items;
+    } else {
+        itemsArray = parsedData;
+    };
+    
+    
     console.log(itemsArray);
 
     itemsArray.forEach((item)=>{
