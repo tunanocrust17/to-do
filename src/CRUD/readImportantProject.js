@@ -8,9 +8,6 @@ export default function readImportantProject(){
 
     let dataLength = parsedData.length;
 
-    let importantPriority = parsedData[1].items[1].priority;
-    let itemsCount = parsedData[1].items.length;
-
     let importantArray = []
 
     for( let i = 0; i < dataLength; i++ ) {
@@ -30,9 +27,5 @@ for (let k = 0 ; k < importantArrayLength; k++){
     removeToDoUI();
     toDoFormat(importantArray, k)
 } 
-
-
-
-console.log(importantArray)
 
 }
