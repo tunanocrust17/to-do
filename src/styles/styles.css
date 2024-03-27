@@ -98,10 +98,17 @@ body{
     grid-template-columns: 4fr 2fr;
 }
 
-.task-container {
+
+/*used to change the side of the tasks when the user clicks a task or closes the task details */
+.task-container-small {
     grid-column: 1/2;
 }
 
+.task-container-large {
+    grid-column: 1/3;
+}
+
+/*puts the task details on the right side of the screen when the user clicks task*/
 .task-detail-container{
     grid-column: 2/3;
 

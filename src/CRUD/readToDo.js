@@ -6,6 +6,15 @@ export default function(){
     expandToDoBtn.forEach((item)=>{
         item.addEventListener('click', (e)=>{
 
+            let taskContainer = document.querySelector('.task-container');
+            taskContainer.classList.remove('task-container-large')
+            taskContainer.classList.add('task-container-small');
+
+            let taskDisplayDiv = document.querySelector('.task-detail-container');
+            taskDisplayDiv.classList.remove('display-none');
+            
+
+
             let parsedData = getDataFromLocalStorage('todo');
 
             //retrieves the current project ID and task ID from the clicked element
@@ -20,9 +29,6 @@ export default function(){
         
             //finds the index of the element the user is deleting within the clicked project array of all the items
             let clickedToDoIndex = clickedProject.map((item)=>item.id).indexOf(clickedToDoID);
-
-            let taskDisplayDiv = document.querySelector('.task-detail-container');
-            taskDisplayDiv.classList.remove('display-none');
 
             let taskTitle = document.getElementById('task-edit-title');
             taskTitle.value = clickedProject[clickedToDoIndex].title;
