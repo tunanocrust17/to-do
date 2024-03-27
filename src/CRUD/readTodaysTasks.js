@@ -12,7 +12,7 @@ export default function readTodaysTasks(){
         let currentDayFormatted = format(currentday, 'yyyy-MM-dd')
 
 
-        let dateTest = parsedData[0].items[6].dueDate;
+
         // let formattedDateTest = parse(dateTest, 'yyyy-MM-dd', new Date())
 
 
@@ -44,14 +44,14 @@ export default function readTodaysTasks(){
 
 
 
-        if( currentDayFormatted == dateTest){
-            workingDate = "IT'S THE SAME!"
-        } else {
-            workingDate = "NOPE IT'S WRONG!"
-        }
+        // if( currentDayFormatted == dateTest){
+        //     workingDate = "IT'S THE SAME!"
+        // } else {
+        //     workingDate = "NOPE IT'S WRONG!"
+        // }
 
-        console.log(workingDate)
-        console.log(typeof(currentDayFormatted))
-        console.log(typeof(dateTest))
+        // console.log(workingDate)
+        // console.log(typeof(currentDayFormatted))
+        // console.log(typeof(dateTest))
 
 }
