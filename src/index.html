@@ -134,7 +134,37 @@
                 <div class="date"></div>
             </div>
             <div class="content-container">
+                <div class="task-container">
 
+                </div>
+                <div class="task-detail-container display-none">
+                    <h1>task container!</h1>
+                    <form action="" class="updateTask">
+                        <div class="form-row">
+                            <label for="task-edit-title">Ttile</label>
+                            <input type="text" id="task-edit-title" name="task-edit-title">
+                        </div>
+                        <div class="form-row">
+                            <label for="task-edit-desc" class="">Description</label>
+                            <input type="text" id="task-edit-desc" name="task-edit-desc">
+                        </div>
+                        <div class="form-row">
+                            <label for="task-edit-dueDate" class="">Due Date</label>
+                            <input type="date" id="task-edit-dueDate" name="task-edit-dueDate">
+                        </div>
+                        <div class="form-row">
+                            <label for="task-edit-priorities">Priority</label>
+                            <select id="task-edit-priorities">
+                                <option value="None">None</option>  
+                                <option value="High">High</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="task-buttons">
+                        <button class="edit-task">Edit</button>
+                        <button class="close-task">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="new-todo-div">
