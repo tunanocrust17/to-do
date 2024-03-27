@@ -32,12 +32,17 @@ export default function(){
 
             let taskTitle = document.getElementById('task-edit-title');
             taskTitle.value = clickedProject[clickedToDoIndex].title;
+            taskTitle.setAttribute('projectid', currentProjectID);
+            taskTitle.setAttribute('todoid', clickedToDoID);
 
             let taskDesc = document.getElementById('task-edit-desc');
             taskDesc.value = clickedProject[clickedToDoIndex].description;
 
             let taskDueDate = document.getElementById('task-edit-dueDate');
             taskDueDate.value = clickedProject[clickedToDoIndex].dueDate;
+
+            let taskPriority = document.getElementById('task-edit-priorities')
+            taskPriority.value = clickedProject[clickedToDoIndex].priority;
 
 
             
