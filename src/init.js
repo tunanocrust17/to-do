@@ -9,6 +9,7 @@ import readAllProjectsUI from './UI/generalUI/readAllProjectsUI';
 import readImportantProjectUI from './UI/generalUI/readImportantProjectUI';
 import currentDay from './UI/generalUI/readDate';
 import readTodaysProjectsUI from './UI/generalUI/readTodaysProjectsUI';
+import closeToDoBox from './UI/toDoUI/closeToDoBox';
 
 export default function init(){
     createNewProjectUI();
@@ -21,4 +22,5 @@ export default function init(){
     readImportantProjectUI();
     currentDay();
     readTodaysProjectsUI();
+    closeToDoBox();
 }
