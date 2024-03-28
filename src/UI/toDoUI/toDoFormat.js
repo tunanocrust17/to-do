@@ -1,5 +1,7 @@
 import deleteToDo from "../../CRUD/deleteToDo";
 import readToDo from "../../CRUD/readToDo";
+import markTaskComplete from "../../CRUD/markcomplete";
+
 
 export default function toDoFormat(parsedData, index){
     let element = document.querySelector('.task-container');
@@ -22,6 +24,24 @@ export default function toDoFormat(parsedData, index){
         let todoBox = document.createElement('div');
         let todoTitle = document.createElement('h3');
         let dueDate = document.createElement('p');
+
+        let todoCheckboxDiv = document.createElement('div');
+        let roundDiv = document.createElement('div');
+        let labelCheckbox = document.createElement('label');
+        let inputCheckbox = document.createElement('input');
+
+        //adds the checkbox for the user to mark project complete
+        labelCheckbox.setAttribute('for', 'checkbox');
+        inputCheckbox.setAttribute('type', 'checkbox');
+        inputCheckbox.setAttribute('id', 'checkbox')
+        inputCheckbox.setAttribute('projectid', item.projectID);
+        inputCheckbox.setAttribute('todoid', item.id);
+        roundDiv.appendChild(labelCheckbox);
+        roundDiv.appendChild(inputCheckbox);
+        roundDiv.classList.add('round');
+        todoCheckboxDiv.classList.add('todo-checkbox-div');
+        todoCheckboxDiv.appendChild(roundDiv);
+        todoBox.appendChild(todoCheckboxDiv)
         
 
         todoTitle.innerHTML = item.title;
@@ -54,4 +74,5 @@ export default function toDoFormat(parsedData, index){
 
     deleteToDo();
     readToDo();
+    markTaskComplete();
 }
