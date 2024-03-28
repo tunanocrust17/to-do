@@ -1,5 +1,7 @@
 import getDataFromLocalStorage from "../Storage/getDataFromLocalStorage";
 import setDataToLocalStorage from "../Storage/setDataToLocalStorage";
+import toDoFormat from "../UI/toDoUI/toDoFormat";
+import removeToDoUI from "../UI/projectUI/removeToDoUI";
 
 export default function updateToDo(){
     let editTaskBtn = document.querySelector('.edit-task');
@@ -34,6 +36,9 @@ export default function updateToDo(){
         clickedProject[clickedToDoIndex].priority = taskPriority.value;
 
         setDataToLocalStorage('todo', parsedData)
+
+        removeToDoUI();
+        toDoFormat(parsedData, currentProjectIndex);
 
         console.log(currentProjectID);
         console.log(clickedToDoID);
