@@ -23,9 +23,6 @@ export default function readImportantProject(){
 
 let importantArrayLength = importantArray.length;
 
-for (let k = 0 ; k < importantArrayLength; k++){
-    removeToDoUI();
-    toDoFormat(importantArray, k)
-} 
+toDoFormat(importantArray, importantArrayLength-1)
 
 }
