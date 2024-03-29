@@ -7,6 +7,7 @@ import submitToDoBtn from './UI/toDoUI/submitToDoBtn';
 import readProject from './CRUD/readProject';
 import readAllProjectsUI from './UI/generalUI/readAllProjectsUI';
 import readImportantProjectUI from './UI/generalUI/readImportantProjectUI';
+import readCompletedProjectsUI from './UI/generalUI/readCompletedUI';
 import currentDay from './UI/generalUI/readDate';
 import readTodaysProjectsUI from './UI/generalUI/readTodaysProjectsUI';
 import closeToDoBox from './UI/toDoUI/closeToDoBox';
@@ -21,6 +22,7 @@ export default function init(){
     readProject();
     readAllProjectsUI();
     readImportantProjectUI();
+    readCompletedProjectsUI();
     currentDay();
     readTodaysProjectsUI();
     closeToDoBox();
