@@ -10,14 +10,11 @@ export default function toDoFormat(parsedData, index){
     let itemsArray;
     
     //determines if we're grabbing an entire project or data from a new list that we created from individual items from each project
-    if(parsedData[index].items){
-        itemsArray = parsedData[index].items;
-    } else {
+    if(parsedData[index].items === undefined){
         itemsArray = parsedData;
-    };
-    
-    
-    console.log(itemsArray);
+    } else {
+        itemsArray = parsedData[index].items;
+    }
 
     itemsArray.forEach((item)=>{
         
