@@ -11,11 +11,6 @@ export default function readTodaysTasks(){
         let currentday = new Date();
         let currentDayFormatted = format(currentday, 'yyyy-MM-dd')
 
-
-
-        // let formattedDateTest = parse(dateTest, 'yyyy-MM-dd', new Date())
-
-
         let myDayArray = [];
 
         for ( let i = 0 ; i < dataLength ; i++) {
@@ -34,24 +29,7 @@ export default function readTodaysTasks(){
 
         let myDayArrayLength = myDayArray.length;
 
-        for ( let k = 0 ; k < myDayArrayLength ; k++) {
-            removeToDoUI();
-            toDoFormat(myDayArray , k )
-        }
 
-        let workingDate;
-
-
-
-
-        // if( currentDayFormatted == dateTest){
-        //     workingDate = "IT'S THE SAME!"
-        // } else {
-        //     workingDate = "NOPE IT'S WRONG!"
-        // }
-
-        // console.log(workingDate)
-        // console.log(typeof(currentDayFormatted))
-        // console.log(typeof(dateTest))
+        toDoFormat(myDayArray, myDayArrayLength-1)
 
 }
