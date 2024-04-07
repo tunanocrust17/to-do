@@ -15,14 +15,14 @@
                 <label for="project-title">Project Title</label>
                 <input type="text" id="project-title" name="project-title" required>
             </div>
-            <button class="cancel-btn">Cancel</button>
             <button class="add-project-btn">Add Project</button>
+            <button class="cancel-btn">Cancel</button>
             
         </form>
     </dialog>
     <dialog class="todo">
         <h1 class="new-todo">New Task</h1>
-            <form action="" class="newToDo" method="post">
+            <form action="" class="newToDo" novalidate>
                 <div class="form-row">
                     <label for="todo-title">Task Title</label>
                     <input type="text" id="todo-title" name="todo-title" required/>
@@ -47,7 +47,7 @@
                     <label for="project-list">Project</label>
                     <select name="project-list" id="project-list"></select>
                 </div>
-
+                
                 <button type="submit" class="add-todo-btn">
                     Add Task
                 </button>

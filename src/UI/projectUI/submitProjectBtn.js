@@ -11,7 +11,6 @@ export default function submitProjectBtn() {
 
     addProjectBtn.addEventListener('click', (e)=>{
         
-        e.preventDefault();
 
         let validation = projectValidation()
 
@@ -22,6 +21,9 @@ export default function submitProjectBtn() {
         projectForm.reset();
         projectDialog.close();
         readProject(); //adds functionality for user to click on the project in the sidebar and it will run a function
+        } else {
+            e.preventDefault();
+
         }
     })
 }
