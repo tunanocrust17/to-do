@@ -12,6 +12,7 @@ export default function(){
 
             let taskDisplayDiv = document.querySelector('.task-detail-container');
             taskDisplayDiv.classList.remove('display-none');
+            taskDisplayDiv.classList.add('display-flex');
             
 
 
